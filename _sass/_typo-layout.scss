@@ -1,0 +1,56 @@
+.hidden {
+    display: none !important;
+}
+.pull-right {
+    float: right !important;
+}
+.pull-left {
+    float: left !important;
+}
+.clear, .clearfix {
+    clear: both;
+}
+.clearL {
+    clear: left;
+}
+.clearR {
+    clear: right;
+}
+.txtL {
+    text-align: left
+}
+.txtR {
+    text-align: right;
+}
+.txtC {
+    text-align: center;
+}
+.txtJ {
+    text-align: justify;
+}
+.txtB {
+    font-weight: bold;
+}
+.txtI, .txtEM {
+    font-style: italic;
+}
+.pad1em {
+    padding: 1em;
+}
+.epr2 {
+    padding-right: 2em;
+}
+.rnd-bdr-12px {
+    border-radius: 12px;
+}
+@media (min-width: 900px) {
+    .txtRDesktop {
+        text-align: right;
+    }
+	.pull-right-desktop {
+		float: right !important;
+	}
+    .epl2 {
+        padding-left: 2em;
+    }
+}

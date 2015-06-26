@@ -1,0 +1,2 @@
+{% assign content_search = site.content | where: include.field, include.value | last %}
+{{ content_search.content }}

@@ -1,0 +1,43 @@
+/*
+ * 3-column grid
+ * Generated initially by http://www.responsivegridsystem.com/calculator/
+ * Modified by CODESIGN2
+ * Editor: Lewis Cowles
+ * Summary: Edited to make the Grid-system mobile first for any browser not supporting media queries
+ *          Various edits for styling of a three column Grid including breakpoint modification & rules
+ */
+
+/*  COLUMN SETUP  */
+.grid3 .col {
+	display: block;
+    float: left;
+	margin: 1% 0 1% 0;
+}
+.grid3.noblock .col {
+	display: inline-block;
+    float: none;
+	margin: 1% 0 1% 0;
+}
+.grid3 [class*="span"] {
+    width: 100%; 
+}
+.grid3 .col:nth-of-type(1), .grid3 .col:nth-child(1) { margin-left: 0; }
+
+@media (min-width: 900px) {
+    .grid3 .col {
+		margin: 1% 0 1% 1%;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+	/*  GRID OF THREE  */
+	.grid3 .span3 {
+		width: 100%;
+	}
+	.grid3 .span2 {
+		width: 66.33%;
+	}
+	.grid3 .span1 {
+		width: 32.66%;
+	}	
+}

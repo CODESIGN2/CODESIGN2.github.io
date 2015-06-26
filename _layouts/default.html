@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		{% include head.html %}
+	</head>
+	<body>
+		<header>
+			<h1>CD<em>2</em></h1>
+			<span class="section-nav">
+				<a href="#top" title="Back To Top"><i class="fa fa-chevron-up"></i></a>
+			</span>
+		</header>
+		{% include header.html %}
+		<div class="bodywrap">
+			{% include content-section.html field="title" value="call-now" %}
+			{{ content }}
+		</div>
+		<div class="push"></div>
+		{% include footer.html %}
+	</body>
+</html>

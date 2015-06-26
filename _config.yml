@@ -1,0 +1,52 @@
+# Site settings
+title: CODESIGN2
+contact:
+  email: codesign2@icloud.com
+  twitter_username: CD2Social
+  github_username:  CODESIGN2
+  phone: '+44 (0) 2033 22 82 74'
+
+description: > # 
+  CODESIGN2 is a full-service digital agency, and development 
+  partner, with skills from Cloud to Digital Marketing, delivering Business 
+  Solutions to make you smile!
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
+# Build settings
+full_rebuild: true
+markdown: kramdown
+collections:
+  content:
+    output: true
+    title: Content Sections
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      map:
+        id: "map"
+        zoom: 1
+        height: '300px'
+        styles: '[ { "stylers": [ { "hue": "#00aaff" }, { "lightness": 25 }, { "saturation": -70 }, { "gamma": 1.24 } ] },{ "elementType": "labels", "stylers": [ { "visibility": "simplified" } ] },{ "featureType": "poi", "stylers": [ { "visibility": "off" } ] },{ "featureType": "administrative.neighborhood", "stylers": [ { "visibility": "off" } ] },{ "featureType": "administrative.land_parcel", "stylers": [ { "visibility": "off" } ] },{ "featureType": "road.local", "stylers": [ { "visibility": "off" } ] } ]'
+        center: { lat: 54.15134, lng: -3.87543 }
+      carousel:
+        controlNav: true
+        directionNav: true
+        touch: true
+        useCSS: true
+        animationLoop: true
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts" # previously `post` in Jekyll 2.2.
+    values:
+      comments: true
+      permalink: ':year/:month/:day/:title/'
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "pages" # previously `post` in Jekyll 2.2.
+    values:
+      layout: default

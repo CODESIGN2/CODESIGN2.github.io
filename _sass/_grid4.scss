@@ -1,0 +1,60 @@
+/*
+ * 4-column grid
+ * Generated initially by http://www.responsivegridsystem.com/calculator/
+ * Modified by CODESIGN2
+ * Editor: Lewis Cowles
+ * Summary: Edited to make the Grid-system mobile first for any browser not supporting media queries
+ *          Various edits for styling of a four column Grid including breakpoint modification & rules
+ */
+
+/*  COLUMN SETUP  */
+.grid4 .col {
+	display: block;
+        float: left;
+	margin: 1% 0 1% 0;
+}
+.grid4.noblock .col {
+	display: inline-block;
+        float: none;
+	margin: 1% 0 1% 0;
+}
+.grid4 [class*="span"] {
+    width: 100%; 
+}
+.grid4 .col:nth-of-type(1), .grid4 .col:nth-child(1) { margin-left: 0; }
+
+@media (min-width: 600px) {
+    .grid4 .col {
+	margin: 1% 0 1% 1%;
+    }
+}
+/*  ADJUST TO HALF DUAL COLUMN LAYOUT AT HIGHER RESOLUTION */
+@media (min-width: 600px) and (max-width: 800px) {
+    .grid4 .span4, .grid4 .span3, .grid4 .span2 {
+	width: 100%;
+    }
+    .grid4 .span1 {
+        width: 49.5%;
+    }
+    .grid4 .span1:nth-child(2n+1) {
+        clear: both;
+        margin-left: 0;
+    }
+}
+
+/*  ADJUST TO FULL FOUR COLUMN LAYOUT AT HIGHER RESOLUTION */
+@media (min-width: 800px) {
+    .grid4 .span4 {
+	width: 100%;
+    }
+    .grid4 .span3 {
+        width: 74.75%;
+    }
+    .grid4 .span2 {
+        width: 49.5%;
+    }
+    .grid4 .span1 {
+        width: 24.25%;
+    }
+    
+}

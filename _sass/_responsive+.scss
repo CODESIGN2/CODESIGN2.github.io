@@ -1,0 +1,62 @@
+/*
+ * Responsive utilities
+ * Created by CODESIGN2
+ * Creator: Lewis Cowles
+ * Summary: Created to add responsive utilities
+ */
+.vis-landscape,
+.vis-portrait,
+.print-only {
+    display: none;
+}
+@media print {
+    .print-only {
+        display: block;
+    }
+    .print-only.inline {
+        display: inline;
+    }
+    .print-only.block {
+        display: block;
+    }
+    .print-only.inlineB {
+        display: inline-block;
+    }
+    .no-print {
+        display: none;
+    }
+}
+@media (orientation : landscape) {
+    .vis-landscape {
+        display: block;
+    }
+    .vis-landscape.inline {
+        display: inline;
+    }
+    .vis-landscape.block {
+        display: block;
+    }
+    .vis-landscape.inlineB {
+        display: inline-block;
+    }
+    .hide-landscape {
+        display: none;
+    }
+}
+@media (orientation : portrait) {
+    .vis-portrait {
+        display: initial;
+    }
+    .vis-portrait.inline {
+        display: inline;
+    }
+    .vis-portrait.block {
+        display: block;
+    }
+    .vis-portrait.inlineB {
+        display: inline-block;
+    }
+    .hide-portrait {
+        display: none;
+    }
+}
