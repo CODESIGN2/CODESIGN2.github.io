@@ -136,7 +136,7 @@ body > header.stuck > h1 {
 	margin-left: 10px;
 }
 body > header > h1 > em, a {
-	color: #31D3D3;
+	color: #0c5949;
 }
 body > header span.section-nav {
 	display: none; opacity: 0;
@@ -165,11 +165,11 @@ footer#page-footer {
  */
 #mainNav {
 	border: none;
-	background-color: #31D3D3;
+	background-color: #0c5949;
 	/*
 	background: #010101;
-	border-top: 2px solid #31D3D3;
-	border-bottom: 2px solid #31D3D3;
+	border-top: 2px solid #0c5949;
+	border-bottom: 2px solid #0c5949;
 	*/
 	box-shadow: 0 0 5px;
 }
@@ -281,7 +281,7 @@ button.pull-right, .btn.pull-right {
 	background: #FFFFB4;
 	border: 1px solid #666600;
 }
-.err {	
+.err {
 	background: #E75C5C;
 	border: 1px solid #660000;
 }
@@ -468,7 +468,7 @@ ul.package-points li {
 	padding: 1em;
 	width: 100%;
 }
-@media (min-width: 800px) { 
+@media (min-width: 800px) {
 	.twit-news .news-item span {
 		font-size: 80%;
 	}
@@ -490,7 +490,7 @@ ul.package-points li {
 	color: #333;
 }
 .section-nav a:hover {
-	color: #31D3D3;
+	color: #0c5949;
 }
 /*
  * TestSwatch
@@ -582,7 +582,7 @@ a {
 
 
 #mainNav {
-	background-color: #148D75;
+	background-color: #0c5949;
 	margin-left: 0 !important;
 	padding: 0 !important;
 }
@@ -593,10 +593,10 @@ a {
 	display: block;
 }
 body > header > h1 > em, a {
-	color: #148D75;
+	color: #0c5949;
 }
 button, .btn {
-	background: #148D75 !important;
+	background: #0c5949 !important;
 	text-shadow: 1px 1px #111;
 	color: #EEE;
 }
@@ -625,4 +625,33 @@ footer img, footer #siteseal {
 	height: auto;
 	border: none !important;
 	outline: none !important;
+}
+
+.tag {
+  padding: .5em;
+  margin: .25em;
+  display: block;
+  background-color: #0c5949;
+  color: #fefefe;
+}
+@media (min-width: 40rem) {
+  .tag {
+    padding: .25em .5em;
+    margin: .2em;
+    display: inline-block;
+    border-radius: .5em;
+  }
+}
+body > header:not(.stuck) {
+  position: absolute;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
 }
