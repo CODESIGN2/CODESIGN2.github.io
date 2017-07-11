@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+    <Dial timeout="10" record="record-from-answer" hangupOnStar="true" trim="do-not-trim" action="https://www.codesign2.co.uk/twiML/was-answered.php">
+        <Number><?= getenv('LEWIS_MOBILE'); ?></Number>
+    </Dial>
+</Response>
