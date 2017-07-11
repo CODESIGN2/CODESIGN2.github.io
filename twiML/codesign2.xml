@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+	<Gather timeout="10" finishOnKey="*" numDigits="1" action="https://www.codesign2.co.uk/twiML/confirm.php" method="GET">
+        <Say voice="alice">Please note this number is not for inbound marketing. Press 1, followed by the hash key to confirm you understand this.</Say>
+    </Gather>
+    <Redirect method="GET">https://www.codesign2.co.uk/twiML/codesign2.xml</Redirect>
+</Response>

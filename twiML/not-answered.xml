@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+    <Say voice="alice">Unfortunately no-one is available to answer your call, please leave a message.</Say>
+    <Record timeout="10" playBeep="true" trim="do-not-trim" finishOnKey="*" maxLength="900" action="https://www.codesign2.co.uk/twiML/message-thanks.xml" method="GET"/>
+	<Redirect method="GET">https://www.codesign2.co.uk/twiML/not-answered.xml</Redirect>
+</Response>

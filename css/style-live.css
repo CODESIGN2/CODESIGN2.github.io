@@ -216,7 +216,12 @@
     float: right !important; }
 
   .epl2 {
-    padding-left: 2em; } }
+    padding-left: 2em; }
+  .epb2 {
+    padding-bottom: 2em; }
+  .big-em {
+    font-size: 1.2em; height: 120%; }
+}
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -274,6 +279,7 @@ h5 {
 
 h4 {
   font-size: 1.1em;
+  padding-top: 1rem;
   height: 120%; }
 
 h3 {
@@ -549,7 +555,7 @@ ul.package-highlight {
  * Package Selection
  */
 .package-selection ul {
-  min-height: 325px;
+  min-height: 18em;
   display: block; }
 
 .package-selection h2 {
@@ -740,7 +746,7 @@ ul.package-points li {
   background-color: #e74c3c; }
 
 .testswatch div:nth-child(7) {
-  background-color: #148d75; }
+  background-color: #0c5949; }
 
 .testswatch div:nth-child(7):hover {
   background-color: #16a085; }
@@ -796,6 +802,8 @@ button, .btn {
 section#our-services, section#contact-us {
   padding-top: 75px; }
 
+section#about-us {
+  padding-top: 50px; }
 #mainNav nav li:nth-child(2) a:hover, #mainNav nav li.active:nth-child(2) a {
   background-color: #E0B710; }
 
@@ -820,28 +828,31 @@ footer img, footer #siteseal {
   border: none !important;
   outline: none !important; }
 
+@media (min-width: 900px) {
+    .phone-only {
+        display: none;
+    }
+    .hide-desktop {
+        visibility: hidden;
+    }
+}
+
+
 .tag {
   padding: .5em;
   margin: .25em;
   display: block;
   background-color: #0c5949;
-  color: #fefefe; }
-
+  color: #fefefe;
+}
 @media (min-width: 40rem) {
   .tag {
     padding: .25em .5em;
     margin: .2em;
     display: inline-block;
-    border-radius: .5em; } }
+    border-radius: .5em;
+  }
+}
 body > header:not(.stuck) {
-  position: absolute; }
-
-.sr-only {
   position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0; }
+}

@@ -1,7 +1,12 @@
-<section class="slider">
+<section class="slider" role="banner">
 	<div class="body">
 		<div>
-			<img class="block" src="/img/digital-world-opt.jpg" title="We provide Digital Innovations for a connected world!" alt="We provide Digital Innovations for a connected world!"/>
+			<picture>
+				<source media="(min-width: 64em)" src="/img/digital-world-opt.jpg">
+				<source media="(min-width: 37.5em)" src="/img/digital-world-opt-med.jpg">
+				<source src="/img/digital-world-opt-sml.jpg">
+				<img class="block" src="/img/digital-world-opt.jpg" rel="dns-prefetch" alt="We provide Digital Innovations for a connected world!">
+			</picture>
 		</div>
 	</div>
 </section>
