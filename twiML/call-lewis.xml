@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+    <Dial timeout="10" record="record-from-answer" hangupOnStar="true" trim="do-not-trim">
+        <Number>+447847529190</Number>
+    </Dial>
+</Response>
