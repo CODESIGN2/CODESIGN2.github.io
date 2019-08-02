@@ -12,7 +12,8 @@
 <body>
 <header>
   <div>
-    <svg width="200" height="71" viewBox="0 0 126.001 71.001">
+    <svg version="1.1" width="200" height="71" viewBox="0 0 126.001 71.001" role="group" aria-labelledby="compat-title-cd2-logo">
+      <title>CODESIGN2</title>
       <!-- Made with the help of https://danmarshall.github.io/google-font-to-svg-path/ -->
       <!-- Credit to Russo One, available via Google Fonts -->
       <!-- Manually edited by Lewis Cowles of CODESIGN2 -->
@@ -22,13 +23,20 @@
       <g stroke-linecap="round" font-size="9pt" stroke="none" fill="#0c5949" transform="translate(105,0) skewX(-5)">
         <path d="M 54 20.001 L 54 22.001 Q 54 30.501 46.8 36.701 Q 44.6 38.601 42 40.501 L 20.5 56.001 L 54 56.001 L 54 70.001 L 0 70.001 L 0 51.001 L 36 25.001 L 36 20.001 Q 36 14.001 30 14.001 L 2 14.001 L 2 0.001 L 34 0.001 Q 44.5 0.001 49.25 4.751 Q 54 9.501 54 20.001 Z"></path>
       </g>
+      <text class="sr-only" id="compat-title-cd2-logo">CODESIGN2</text>
     </svg>
   </div>
   <div>
     <a href="tel:+442033228274" title="Call Us Now ( Opening Hours 10am - 4pm )">+44 (0) 2033 22 82 74</a>
   </div>
   <div>
-  Performance | Design | Control | Development | Connectivity
+    <ul class="bar-separated">
+      <li class="item">Performance</li>
+      <li class="item">Design</li>
+      <li class="item">Control</li>
+      <li class="item">Development</li>
+      <li class="item">Connectivity</li>
+    </ul>
   </div>
   <div>
     <a href="mailto:codesign2@icloud.com?subject=Website%20Enquiry" title="Send us an email">codesign2 [at] icloud.com</a>
@@ -41,6 +49,9 @@ a { text-decoration: none; color: #0c5949; }
 header, main { display: block; width: 100%; max-width: 60em; max-width: 60rem; margin: 0 auto; text-align: center; margin-top: 3em; }
 main { margin-top: 4em; }
 img { max-width: 100%; }
+.sr-only { font-size: 0; }
+.bar-separated { margin: 0; padding: 0; display: flex; list-style: none; flex-direction: row; justify-content: center; flex-wrap: wrap; }
+.bar-separated .item { padding: 0 1em; }
 </style>
 <script>
 if ('serviceWorker' in navigator) {
